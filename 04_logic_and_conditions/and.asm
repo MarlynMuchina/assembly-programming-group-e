@@ -24,3 +24,4 @@ _start:
     mov eax, 1     ;sys call number to exit
     xor ebx, ebx   ; 0 for successful exit
     int 0x80       ; invoke call
+
