@@ -1,9 +1,12 @@
 ;
-; 10101010 AND 11001100 = 10001000
+; 10101010 AND 11001100 = 10001000  = 136
+;                                     -120
 
-; nasm -f elf32 hello_world_32.asm -o hello_world_32.o
-; ld -m elf_i386 -o hello32 hello_world_32.o
-; ./hello32
+; nasm -f elf32 and.asm -o and.o
+; ld -m elf_i386 and.o -o and
+
+; to run the file on terminal : ./and
+; start the file on gdb terminal : gdb --silent and
 
 section .data
     val1 db 0b10101010   ; 170 decimal

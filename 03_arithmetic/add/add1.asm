@@ -2,7 +2,7 @@
 section .data
     num1 db 120   ; 01111000b
     num2 db 10    ; 00001010b
-    result db 0
+    result db 0   ; 10000010b
 
 section .text
     global _start
@@ -29,3 +29,4 @@ _start:
 ; SF - set if MSB is 1 (Bit 7)
 ; OF - Set if the signed result is out of range.
 ;      Signed 8-bit: range = -128 to +127.
+;      Unsigned 8-bit 255
