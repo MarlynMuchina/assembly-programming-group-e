@@ -1,5 +1,7 @@
 ; simple loop
-
+;nasm -f elf32 loop1.asm -o loop1.o
+;to run ./loop1
+; to debugg gdb --silent loop1
 section .data
     str_msg db "Hello from LOOP!", 10
     len equ $ - str_msg
